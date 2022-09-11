@@ -49,6 +49,11 @@ the `_MyHomePageState` class.
 The app must contain a single page which looks as this _reference image_:
 <img alt="Reference image for the solution" src="screenshot.png" title="Reference image" width="540"/>
 
+In addition to the visual representation, you must also set on-tap handlers for the three buttons:
+* The Sign-out button in the app bar must call the `_signOut` method.
+* The "Change profile picture" must call `_changePicture` method.
+* The "?" button must call `_showHelp` method.
+
 ### Hints
 
 Here is what the app must contain:
