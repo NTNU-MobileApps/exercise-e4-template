@@ -58,7 +58,8 @@ Here is what the app must contain:
 3. You need an `AppBar` with the text "Profile picture", with font size 24px.
 4. The app bar must be "elevated above the background" - 10px high.
 5. The background for the main app-region has the color `Grey[200]`.
-6. There must be a "Sign out" action in the app bar, the icon is `Icons.logout`, size: 32px.
+6. There must be a "Sign out" action in the app bar, an `IconButton` with the `Icons.logout` as the
+   icon, size: 32px.
     1. When it is pressed, call the `_signOut` method. This will be tested in another unit-test, the
        golden-image does not check this part.
 7. An image and a button, centered vertically:
@@ -68,7 +69,7 @@ Here is what the app must contain:
     4. When the button is pressed, the `_changePicture` method must be called
 8. On the bottom right there must be a floating action button with the `Icons.help_outline` icon,
    size: 44px.
-   1. When this button is clicked, `_showHelp` method must be called.
+    1. When this button is clicked, `_showHelp` method must be called.
 
 ## Image source
 
