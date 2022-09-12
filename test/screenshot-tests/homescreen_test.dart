@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:exercise_e4/app.dart';
 import 'package:golden_toolkit/golden_toolkit.dart';
 
@@ -10,6 +12,18 @@ void main() {
     builder.overrideDevicesForAllScenarios(devices: [Device.phone]);
     builder.addScenario(widget: const E4App(), name: 'default page');
     await tester.pumpDeviceBuilder(builder);
-    await screenMatchesGolden(tester, 'demo_page');
+    String goldenImageName;
+    if (Platform.isWindows) {
+      goldenImageName = "demo_page_windows";
+    } else if (Platform.isLinux) {
+      goldenImageName = "demo_page_windows";
+    } else if (Platform.isMacOS) {
+      goldenImageName = "demo_page_macos";
+    } else {
+      throw UnimplementedError(
+          "Golden image testing not supported on your Operating system!");
+    }
+    print("Using $goldenImageName as a golden image");
+    await screenMatchesGolden(tester, goldenImageName);
   });
 }
