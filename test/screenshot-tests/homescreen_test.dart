@@ -16,7 +16,7 @@ void main() {
     if (Platform.isWindows) {
       goldenImageName = "demo_page_windows";
     } else if (Platform.isLinux) {
-      goldenImageName = "demo_page_windows";
+      goldenImageName = "demo_page_linux";
     } else if (Platform.isMacOS) {
       goldenImageName = "demo_page_macos";
     } else {
