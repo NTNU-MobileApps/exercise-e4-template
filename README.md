@@ -60,7 +60,7 @@ Here is what the app must contain:
 
 1. The main color (for the theme) must be `Colors.red`.
 2. You need to remove the label saying "Debug" on the top-right corner.
-3. You need an `AppBar` with the text "Profile picture", with font size 24px.
+3. You need an `AppBar` with the text "Profile page", with font size 24px.
 4. The app bar must be "elevated above the background" - 10px high.
 5. The background for the main app-region has the color `Grey[200]`.
 6. There must be a "Sign out" action in the app bar, an `IconButton` with the `Icons.logout` as the
